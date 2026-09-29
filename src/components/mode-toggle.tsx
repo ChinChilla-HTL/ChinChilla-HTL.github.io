@@ -11,13 +11,14 @@ export function ModeToggle({ className }: { className?: string }) {
   return (
     <Button
       type="button"
+      aria-label="Toggle color theme"
       variant="link"
       size="icon"
       className={cn(className)}
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
-      <SunIcon className="h-full w-full" />
-      <MoonIcon className="hidden h-full w-full" />
+      <SunIcon className="size-5 hidden dark:block" />
+      <MoonIcon className="size-5 dark:hidden" />
     </Button>
   );
 }
