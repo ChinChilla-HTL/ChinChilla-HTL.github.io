@@ -14,5 +14,5 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en" suppressHydrationWarning><body className={`${cabinet.variable} font-sans antialiased`}><ThemeProvider attribute="class" defaultTheme="light"><TooltipProvider delayDuration={0}><div className="technical-background" aria-hidden="true"><div className="technical-grid"/><div className="signal signal-one"/><div className="signal signal-two"/><div className="signal signal-three"/></div><a className="skip-link" href="#home">Skip to content</a><div className="page-shell">{children}</div><Navbar /></TooltipProvider></ThemeProvider></body></html>;
+  return <html lang="en" suppressHydrationWarning><body className={`${cabinet.variable} font-sans antialiased`}><ThemeProvider attribute="class" defaultTheme="dark" storageKey="haitian-theme-v2"><TooltipProvider delayDuration={0}><div className="technical-background" aria-hidden="true"><div className="technical-grid"/><div className="signal signal-one"/><div className="signal signal-two"/><div className="signal signal-three"/></div><a className="skip-link" href="#home">Skip to content</a><div className="page-shell">{children}</div><Navbar /></TooltipProvider></ThemeProvider></body></html>;
 }
