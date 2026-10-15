@@ -17,7 +17,7 @@ body { letter-spacing: 0; }
 @media(max-width:760px) { .technical-background { mask-image:linear-gradient(to bottom,black,transparent 220px); opacity:.55; }.signal { display:none; } }
 .eyebrow { display:flex; justify-content:space-between; gap:16px; font-size:10px; color:var(--muted-foreground); font-family:monospace; margin-bottom:36px; }
 .identity { display:flex; justify-content:space-between; align-items:center; gap:20px; }
-.profile-avatar { width:112px; height:112px; flex-shrink:0; border-radius:50%; object-fit:cover; object-position:42% 35%; border:1px solid var(--border); }
+.profile-avatar { width:112px; height:112px; flex-shrink:0; border-radius:50%; object-fit:cover; object-position:50% top; border:1px solid var(--border); }
 @media(max-width:520px) { .profile-avatar { width:84px; height:84px; } }
 .identity h1 { font-size:48px; font-weight:700; line-height:1.15; }
 .identity h1 span { color:#16836c; }
